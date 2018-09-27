@@ -34,11 +34,13 @@
 
 					<section data-id="1" data-markdown>
 						<script type="text/template">
-							### Introducción <!-- .slide: style="text-align: left;"> -->
+							>Es cierto que la transformación digital genera numerosas oportunidades, pero actualmente plantea también un riesgo cardinal: el de una sociedad mal preparada para el futuro
+
+							<small>[Comunicación de la Comisión al Parlamento Europeo, al Consejo, al Comité Económico y Social Europeo y al Comité de las Regiones sobre el Plan de Acción de Educación Digital](https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:52018DC0022&from=EN)</small>
 
 						</script>
 					</section>
-				<section>
+
 					<section data-id="1" data-markdown>
 						<script type="text/template">
 							![Portada de Scientific American 2001](./img/semantic_web.png)
@@ -46,17 +48,30 @@
 						</script>
 					</section>
 
-
 				<section data-id="1" data-markdown>
 					<script type="text/template">
 						[![Parte de la nube de LOD](./img/lod-datasets_2009-07-14_cropped.png)](https://lod-cloud.net/)
 
 					</script>
 				</section>
-				</section>
+
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						lo que lleva a la ETSI de Informática de la UNED...
+						RDF + XML + ontologías
+
+						**sujeto - predicado - objeto**
+
+							<http://example.org/bob#me>
+						    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+						    <http://xmlns.com/foaf/0.1/Person> .
+
+						¡y SPARQL!
+					</script>
+				</section>
+
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						todo esto lleva a la ETSI de Informática de la UNED...
 
 						[![UNED ETSI Informática](./img/Escuela-Informatica-UNED-3.jpg)](https://lod-cloud.net/)
 
@@ -66,7 +81,7 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						y se establecen unos objetivos
+						### y se establecen unos objetivos
 						<div tagcloud>
 							aprendizaje
 							formación
@@ -80,22 +95,19 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						## ¿cómo?
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
+						#### pero todo proyecto conlleva un riesgo
 						[![Agile vs Waterfall](./img/agile_risk.png)](https://blog.gds-gov.tech/agile-transformation-part-3-convince-others-26a20ad603be)
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						### aunque el riesgo se puede reducir
 						[![Extreme Programming](./img/xp.png)](https://www.amazon.es/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658)
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						planificar lo es todo...
+						#### Eissenhower dijo: planificar lo es todo...
 						![Planificación de anteproyecto](./img/anteproyecto.png)
 
 					</script>
@@ -125,12 +137,14 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Trabajos previos <!-- .slide: style="text-align: left;"> -->
+						#### había vida antes de RDFplay
+						![SPARQL playground](./img/sparql_playground.png)
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						#### y hay dónde elegir
 						<div class='multiCol'>
 							<div class='col' align="center">![Java](./img/java-logo.png) <!-- .element height="10%" width="25%" --></div>
 							<div class='col' align="center" style="width: 50%; margin: 0 auto;">![Python](./img/python-logo.png) <!-- .element height="10%" width="25%" --></div>
@@ -142,25 +156,89 @@
 								<div class='col' align="center"><small>Rdflib</small></div>
 									<div class='col' align="center"><small>¿RDF.js?</small></div>
 
+						</div>
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						#### demasiado dónde elegir
+						<div class='multiCol'>
+							<div class='col' align="center">![Javascript frameworks](./img/js_fws.png)</div>
+							<div class='col' align="center">
+								<table>
+									<thead><tr>
+										<th>Framework</th>
+										<th><p> <img width="25" height="25" src="./img/star.png" align="left" /> Github</p></th>
+									</tr></thead>
+									<tbody><tr>
+										<td>Angular</td>
+										<td>40.133</td>
 
+									</tr>
+									<tr>
+										<td>React</td>
+										<td>110.129</td>
+									</tr>
+									<tr>
+										<td>Vue</td>
+										<td>112.650</td>
+									</tr>
+
+									</tbody>
+								</table>
+
+							</div>
+						</div>
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Recursos <!-- .slide: style="text-align: left;"> -->
+						#### afortunadamente, hay recomendaciones
+						![Recomendación de RDF-ext](./img/gitter01.png)
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Análisis <!-- .slide: style="text-align: left;"> -->
+						![Recomendación de Vue](./img/gitter02.png)
+					</script>
+				</section>
+
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### no todo son clavos...
+						<div tagcloud>
+							Github
+							Trello
+							Webstorm
+							Udemy
+							RDF-Ext
+							Comunica
+							Vue
+							ES6
+						</div>
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						### comienza el desarrollo
+						![Diagrama de casos de uso](./img/casos.png)
+
+					</script>
+				</section>
+
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### ¿cómo es una aplicación semántica?
 						![Arquitectura aplicación semántica](./img/despliegue.png)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### ¿y una aplicación con Vue?
+						![Diagrama de componentes Vue](./img/componentes.png)
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
@@ -170,40 +248,80 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						![Diagrama de componentes Vue](./img/componentes.png)
+						### el caos del desarrollo JS
+						|Recurso|Descripción|
+						|-------|-----------|
+						|Javascript|ES6|
+						|Entorno|Node.js 10.7.0|
+						|Gestión de paquetes|npm 6.1.0|
+						|Gestión de proyecto|Webpack|
+						|Transpiler|Babel|
+						|Componentes|Vuetify|
+						|Despliegue|Firebase|
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Implementación <!-- .slide: style="text-align: left;"> -->
-
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Pruebas <!-- .slide: style="text-align: left;"> -->
-
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Resultados <!-- .slide: style="text-align: left;"> -->
-
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Conclusiones <!-- .slide: style="text-align: left;"> -->
+						#### siempre quedarán las baterías de pruebas
+						![Pruebas unitarias y e2e](./img/pruebas.svg)
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Líneas de trabajo futuras <!-- .slide: style="text-align: left;"> -->
+						para poder mejorar, hay que medir
+						<div class='multiCol'>
+							<div class='col' align="center">
+								![Accesibilidad](./img/lighthouse.png) <!-- .element height="75%" width="75%" -->
+								![Mobile Friendly](./img/mobile_friendly.png) <!-- .element height="90%" width="90%" -->
+
+							</div>
+							<div class='col' align="center">
+								![Complejidad](./img/eslint.png)
+								![Rendimiento](./img/rendimiento_import_22.png) <!-- .element height="75%" width="75%" -->
+							</div>
+						</div>
 
 					</script>
 				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### concluyendo...
+						<small>formación en Web Semántica para fomentar la reutilización con datos estructurados</small>
+						![RDFplay](./img/rdfplay.png)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### *futurum incertum est*
 
+						<div class='multiCol'>
+							<div class='col' align="center">
+								<p>integración</p>
+
+								<p>actualización</p>
+							</div>
+							<div class='col' align="center">
+								<p>nueva funcionalidad</p>
+
+								<p>rendimiento</p>
+							</div>
+
+						</div>
+						### **y liberarlo a la comunidad**
+
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						## **[demo](https://unedtfg-198720.firebaseapp.com/#/)**
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						## **¡Muchas gracias!**
+					</script>
+				</section>
 			</div>
 		</div>
 
@@ -217,6 +335,7 @@
 			Reveal.initialize({
                 slideNumber: true,
                 margin: 0,
+                transition: 'fade',
                 dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{src: 'plugin/tagcloud/tagcloud.js', async: true},
