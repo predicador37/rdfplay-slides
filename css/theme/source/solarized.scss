@@ -12,8 +12,10 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+// @import url(../../lib/font/league-gothic/league-gothic.css);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 
 
 /**
@@ -56,7 +58,38 @@ $selectionBackgroundColor: $magenta;
 // 	@include radial-gradient( rgba($base3,1), rgba(lighten($base3, 20%),1) );
 // }
 
+.multiCol {
+	display: table;
+	table-layout: fixed; // don't fudge depending on content
+	width: 100%;
+	text-align: left; // matter of taste, makes imho sense
+	.col {
+		display: table-cell;
+		vertical-align: top;
+		width: 50%;
+		padding: 0 0 0 3%; // some vertical, and between columns
+		&:first-of-type { padding-left: 0; } // there's nothing before col1
+	}
+}
 
+.outer {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	/*whatever width you want*/
+}
 
 // Theme template ------------------------------
 @import "../template/theme";

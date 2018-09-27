@@ -2,14 +2,42 @@
  * Solarized Light theme for reveal.js.
  * Author: Achim Staebler
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 /**
  * Solarized colors by Ethan Schoonover
  */
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
+
+.multiCol {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: left; }
+  .multiCol .col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 0 0 3%; }
+    .multiCol .col:first-of-type {
+      padding-left: 0; }
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /*whatever width you want*/ }
 
 /*********************************************
  * GLOBAL STYLES
@@ -50,10 +78,11 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #586e75;
-  font-family: "Roboto", Impact, sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
+  text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
 

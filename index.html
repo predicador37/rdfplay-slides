@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/solarized.css">
 
@@ -39,45 +38,110 @@
 
 						</script>
 					</section>
+				<section>
 					<section data-id="1" data-markdown>
 						<script type="text/template">
-							### La Web Semántica <!-- .slide: style="text-align: left;"> -->
+							![Portada de Scientific American 2001](./img/semantic_web.png)
 
 						</script>
 					</section>
+
+
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Motivación <!-- .slide: style="text-align: left;"> -->
+						[![Parte de la nube de LOD](./img/lod-datasets_2009-07-14_cropped.png)](https://lod-cloud.net/)
+
+					</script>
+				</section>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						lo que lleva a la ETSI de Informática de la UNED...
+
+						[![UNED ETSI Informática](./img/Escuela-Informatica-UNED-3.jpg)](https://lod-cloud.net/)
+
+
+						donde se detecta una necesidad
+				</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						y se establecen unos objetivos
+						<div tagcloud>
+							aprendizaje
+							formación
+							edición
+							consulta
+							flexibilidad
+							MVP
+							facilidad
+						</div>
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						## ¿cómo?
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						[![Agile vs Waterfall](./img/agile_risk.png)](https://blog.gds-gov.tech/agile-transformation-part-3-convince-others-26a20ad603be)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						[![Extreme Programming](./img/xp.png)](https://www.amazon.es/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						![Planificación de anteproyecto](./img/anteproyecto.png)
+
+					</script>
+				</section>
+				<section class="center" data-id="1" data-markdown>
+					<script type="text/template">
+						<div class='multiCol'>
+							<div class='col outer' align="center"><!-- .slide: class="center" -->
+								<div class="middle">
+									<div class="inner">
+								<p>pero la realidad</p>
+								<p>es tozuda</p>
+								</div>
+								</div>
+							</div>
+							<div class='col'>
+					![Diagrama de Gantt](./img/gantt.png)
+							</div>
+						</div>
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						![Organización con Trello](./img/trello.png)
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Objetivos <!-- .slide: style="text-align: left;"> -->
+						### Trabajos previos <!-- .slide: style="text-align: left;"> -->
 
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Metodología <!-- .slide: style="text-align: left;"> -->
+						<div class='multiCol'>
+							<div class='col' align="center">![Java](./img/java-logo.png) <!-- .element height="10%" width="25%" --></div>
+							<div class='col' align="center" style="width: 50%; margin: 0 auto;">![Python](./img/python-logo.png) <!-- .element height="10%" width="25%" --></div>
+							<div class='col' align="center" style="width: 50%; margin: 0 auto;">![Javascript](./img/js-logo.png) <!-- .element height="10%" width="25%" --></div>
+						</div>
 
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Planificación <!-- .slide: style="text-align: left;"> -->
+						<div class='multiCol'>
+							<div class='col' align="center"><small>Apache Jena</small></div>
+								<div class='col' align="center"><small>Rdflib</small></div>
+									<div class='col' align="center"><small>¿RDF.js?</small></div>
 
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Trabajos previos, <!-- .slide: style="text-align: left;"> -->
 
-					</script>
-				</section>
-				<section data-id="1" data-markdown>
-					<script type="text/template">
-						### Estado actual <!-- .slide: style="text-align: left;"> -->
 
 					</script>
 				</section>
@@ -95,13 +159,22 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Diseño <!-- .slide: style="text-align: left;"> -->
-
+						![Arquitectura aplicación semántica](./img/despliegue.png)
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### Implementación y pruebas <!-- .slide: style="text-align: left;"> -->
+						![Gestión de estado Vue](./img/vuex.png)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						![Diagrama de componentes Vue](./img/componentes.png)
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						### Implementación <!-- .slide: style="text-align: left;"> -->
 
 					</script>
 				</section>
@@ -145,6 +218,7 @@
                 margin: 0,
                 dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
+					{src: 'plugin/tagcloud/tagcloud.js', async: true},
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
