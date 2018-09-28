@@ -4,7 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>RDFplay: un playground para formación en tecnologías de la Web Semántica</title>
+		<meta name="description" content="Defensa PFG UNED">
+		<meta name="author" content="Miguel Expósito Martín">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/solarized.css">
 
@@ -27,7 +29,7 @@
 					<script type="text/template">
 						##### Defensa del PFG
 						### RDFplay: un playground para formación en tecnologías de la Web Semántica
-						###### Grado en Ingeniería en Tecnologías de la información
+						###### Grado en Ingeniería en Tecnologías de la información (UNED)
 						<small>Miguel Expósito Martín</small>
 					</script>
 				</section>
@@ -43,13 +45,25 @@
 
 					<section data-id="1" data-markdown>
 						<script type="text/template">
-							![Portada de Scientific American 2001](./img/semantic_web.png)
+							<div class="multiCol">
+								<div class="col">
+									<div class="box">
+									<h2>La Web Semántica</h2>
+									</div>
+								</div>
+								<div class="col">
+									![Portada de Scientific American 2001](./img/semantic_web.png)
+								</div>
+
+							</div>
+
 
 						</script>
 					</section>
 
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						### y linked open data
 						[![Parte de la nube de LOD](./img/lod-datasets_2009-07-14_cropped.png)](https://lod-cloud.net/)
 
 					</script>
@@ -57,15 +71,18 @@
 
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						RDF + XML + ontologías
+						### ¿en qué se basan?
 
-						**sujeto - predicado - objeto**
+						RDF + XML + ontologías <!-- .element: class="fragment" data-fragment-index="1" -->
+
+						**sujeto - predicado - objeto** <!-- .element: class="fragment" data-fragment-index="2" -->
 
 							<http://example.org/bob#me>
 						    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
 						    <http://xmlns.com/foaf/0.1/Person> .
+						<!-- .element: class="fragment" data-fragment-index="3" -->
 
-						¡y SPARQL!
+						¡y SPARQL! <!-- .element: class="fragment" data-fragment-index="4" -->
 					</script>
 				</section>
 
@@ -76,7 +93,7 @@
 						[![UNED ETSI Informática](./img/Escuela-Informatica-UNED-3.jpg)](https://lod-cloud.net/)
 
 
-						donde se detecta una necesidad
+						donde se detecta una necesidad <!-- .element: class="fragment" data-fragment-index="2" -->
 				</script>
 				</section>
 				<section data-id="1" data-markdown>
@@ -107,7 +124,7 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						#### Eissenhower dijo: planificar lo es todo...
+						#### Eissenhower: *planning is everything...*
 						![Planificación de anteproyecto](./img/anteproyecto.png)
 
 					</script>
@@ -118,7 +135,7 @@
 							<div class='col outer' align="center"><!-- .slide: class="center" -->
 								<div class="box">
 
-								<p>...pero los planes son inútiles</p>
+								<p>*...but plans are worthless*</p>
 
 								</div>
 							</div>
@@ -146,17 +163,27 @@
 					<script type="text/template">
 						#### y hay dónde elegir
 						<div class='multiCol'>
-							<div class='col' align="center">![Java](./img/java-logo.png) <!-- .element height="10%" width="25%" --></div>
-							<div class='col' align="center" style="width: 50%; margin: 0 auto;">![Python](./img/python-logo.png) <!-- .element height="10%" width="25%" --></div>
-							<div class='col' align="center" style="width: 50%; margin: 0 auto;">![Javascript](./img/js-logo.png) <!-- .element height="10%" width="25%" --></div>
+							<div class='col' align="center">![Java](./img/java-logo.png) </div>
+							<div class='col' align="center" >![Python](./img/python-logo.png) </div>
+							<div class='col' align="center">![Javascript](./img/js-logo.png) </div>
 						</div>
 
 						<div class='multiCol'>
-							<div class='col' align="center"><small>Apache Jena</small></div>
-								<div class='col' align="center"><small>Rdflib</small></div>
-									<div class='col' align="center"><small>¿RDF.js?</small></div>
+							<div class='col' align="center"><p>Apache Jena</p></div>
+							<div class='col' align="center"><p>Rdflib</p></div>
+							<div class='col' align="center"><p class="fragment grow highlight-current-blue">¿RDF.js?</p></div>
 
 						</div>
+					</script>
+				</section>
+				<section data-id="1" data-markdown>
+					<script type="text/template">
+						[RDF.js](https://www.w3.org/community/rdfjs/)
+
+						<small>*In a joint effort, MIT CSAIL, Ghent University and Zazuko will align their existing work to create RDF.js, a new RDF and Linked Data JavaScript library based on the RDFJS specification*</small>
+
+						<small>*Linked Data is built on top of the web stack and the programming language of the web is JavaScript. It is crucial for Web Developers to have access to well-designed JavaScript libraries to work with RDF and Linked Data*</small>
+
 					</script>
 				</section>
 				<section data-id="1" data-markdown>
@@ -201,6 +228,7 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						#### afortunadamente, hay recomendaciones
 						![Recomendación de Vue](./img/gitter02.png)
 					</script>
 				</section>
@@ -223,7 +251,7 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
-						### comienza el desarrollo
+						### de la entrevista al caso de uso
 						![Diagrama de casos de uso](./img/casos.png)
 
 					</script>
@@ -243,6 +271,7 @@
 				</section>
 				<section data-id="1" data-markdown>
 					<script type="text/template">
+						### ¿y con VueX?
 						![Gestión de estado Vue](./img/vuex.png)
 					</script>
 				</section>
@@ -272,13 +301,13 @@
 						para poder mejorar, hay que medir
 						<div class='multiCol'>
 							<div class='col' align="center">
-								![Accesibilidad](./img/lighthouse.png) <!-- .element height="75%" width="75%" -->
-								![Mobile Friendly](./img/mobile_friendly.png) <!-- .element height="90%" width="90%" -->
+								![Accesibilidad](./img/lighthouse.png)
+								![Mobile Friendly](./img/mobile_friendly.png)
 
 							</div>
 							<div class='col' align="center">
 								![Complejidad](./img/eslint.png)
-								![Rendimiento](./img/rendimiento_import_22.png) <!-- .element height="75%" width="75%" -->
+								![Rendimiento](./img/rendimiento_import_22.png)
 							</div>
 						</div>
 
@@ -297,18 +326,19 @@
 
 						<div class='multiCol'>
 							<div class='col' align="center">
-								<p>integración</p>
+								<p class="fragment" data-fragment-index="2">integración</p>
 
-								<p>actualización</p>
+								<p class="fragment" data-fragment-index="2">actualización</p>
 							</div>
 							<div class='col' align="center">
-								<p>nueva funcionalidad</p>
+								<p class="fragment" data-fragment-index="2">nueva funcionalidad</p>
 
-								<p>rendimiento</p>
+								<p class="fragment" data-fragment-index="2">rendimiento</p>
 							</div>
 
 						</div>
 						### **y liberarlo a la comunidad**
+						<!-- .element: class="fragment" data-fragment-index="3" -->
 
 					</script>
 				</section>
